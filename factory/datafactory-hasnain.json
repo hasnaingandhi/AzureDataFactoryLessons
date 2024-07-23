@@ -1,0 +1,9 @@
+{
+	"name": "datafactory-hasnain",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0506fd1c-a259-4788-9137-4d6c6a75027b",
+		"tenantId": "ce0db214-cf5e-4aa5-9781-bd8d3fa6c4c3"
+	}
+}
