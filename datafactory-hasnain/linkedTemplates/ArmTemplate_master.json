@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'dtfls_gen'"
 		},
+		"ls_awsrds_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_awsrds'"
+		},
 		"ls_blob1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_blob1'"
@@ -19,9 +23,25 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_gen2'"
 		},
+		"ls_azuremysql_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_azuremysql'"
+		},
 		"dtfls_gen_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://hasnaincs1.dfs.core.windows.net/"
+		},
+		"ls_awsrds_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "database-1.chyyicg8a4ef.us-east-1.rds.amazonaws.com"
+		},
+		"ls_awsrds_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "database-1"
+		},
+		"ls_awsrds_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin"
 		},
 		"ls_gen2_properties_typeProperties_url": {
 			"type": "string",
@@ -57,14 +77,29 @@
 					"dtfls_gen_accountKey": {
 						"value": "[parameters('dtfls_gen_accountKey')]"
 					},
+					"ls_awsrds_password": {
+						"value": "[parameters('ls_awsrds_password')]"
+					},
 					"ls_blob1_connectionString": {
 						"value": "[parameters('ls_blob1_connectionString')]"
 					},
 					"ls_gen2_accountKey": {
 						"value": "[parameters('ls_gen2_accountKey')]"
 					},
+					"ls_azuremysql_connectionString": {
+						"value": "[parameters('ls_azuremysql_connectionString')]"
+					},
 					"dtfls_gen_properties_typeProperties_url": {
 						"value": "[parameters('dtfls_gen_properties_typeProperties_url')]"
+					},
+					"ls_awsrds_properties_typeProperties_server": {
+						"value": "[parameters('ls_awsrds_properties_typeProperties_server')]"
+					},
+					"ls_awsrds_properties_typeProperties_database": {
+						"value": "[parameters('ls_awsrds_properties_typeProperties_database')]"
+					},
+					"ls_awsrds_properties_typeProperties_userName": {
+						"value": "[parameters('ls_awsrds_properties_typeProperties_userName')]"
 					},
 					"ls_gen2_properties_typeProperties_url": {
 						"value": "[parameters('ls_gen2_properties_typeProperties_url')]"

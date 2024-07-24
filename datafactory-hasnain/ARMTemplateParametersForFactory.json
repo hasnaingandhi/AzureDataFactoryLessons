@@ -8,14 +8,29 @@
 		"dtfls_gen_accountKey": {
 			"value": ""
 		},
+		"ls_awsrds_password": {
+			"value": ""
+		},
 		"ls_blob1_connectionString": {
 			"value": ""
 		},
 		"ls_gen2_accountKey": {
 			"value": ""
 		},
+		"ls_azuremysql_connectionString": {
+			"value": ""
+		},
 		"dtfls_gen_properties_typeProperties_url": {
 			"value": "https://hasnaincs1.dfs.core.windows.net/"
+		},
+		"ls_awsrds_properties_typeProperties_server": {
+			"value": "database-1.chyyicg8a4ef.us-east-1.rds.amazonaws.com"
+		},
+		"ls_awsrds_properties_typeProperties_database": {
+			"value": "database-1"
+		},
+		"ls_awsrds_properties_typeProperties_userName": {
+			"value": "admin"
 		},
 		"ls_gen2_properties_typeProperties_url": {
 			"value": "https://hasnaincs1.dfs.core.windows.net/"
