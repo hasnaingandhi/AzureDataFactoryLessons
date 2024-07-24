@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "newCSVProject",
+						"referenceName": "projectdest",
 						"type": "DatasetReference"
 					},
 					"name": "sink1"
@@ -46,14 +46,6 @@
 				"     Rating = avg(toInteger(Rating))) ~> aggregate1",
 				"aggregate1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     input(",
-				"          movie as string,",
-				"          title as string,",
-				"          genres as string,",
-				"          year as string,",
-				"          Rating as string,",
-				"          {Rotton Tomato} as string",
-				"     ),",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
